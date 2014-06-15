@@ -9,20 +9,7 @@ deploy:
   provider: heroku
   api_key:
     secure: QJQKTd5epSUk81cYsuksoUJzxFp0Xs2li6OeqfAgoVjcFtWrGbEp/s/ErU/JV2b373VZxWCZAZilH71em6lFjJITrsu2BrsmNt98gC4jcHlwMY0qzRso2MqiqVjTNRLGsplH1JbYKtjKZJVLZH6wOItFlgL88FGcNnm8lOW0cUg=
-  run:
-    - heroku config:add HEROKU_URL=http://damp-castle-2298.herokuapp.com/
   app: damp-castle-2298
   on:
     repo: taka011239/manji0112_bot
-after_deploy:
-- heroku addons:add redistogo:nano
-- heroku config:add HEROKU_URL=http://damp-castle-2298.herokuapp.com/
-- heroku config:add HUBOT_HIPCHAT_JID=$HIPCHAT_JID
-- heroku config:add HUBOT_HIPCHAT_PASSWORD=$HIPCHAT_PASS
-- heroku config:add HUBOT_HIPCHAT_ROOM=All
-- heroku ps:scale web=1
-env:
-  global:
-  - secure: OS+rqMgnylkVG8P8A+wL57IoMeTYFQ/yxfUGhYHhDcweanAzZ2oTYpJ8QKjHlNlDxlJ7qVhDE3PNH95pslP09eQC7GH8+GPc96QXNSRtnhVCRLOsxHms1+NdzmHOJP7ZLzes3Ip9LWu5EoawUjVP9S5MzCCI6nJQb0UPsy4Oss0=
-  - secure: kVVqYOQMZm5GFUEy6eD34CrLnp+NOyITnclE2uw9gqCP4F1n1afU3GWz63+dRrbSgvTIS7ZPR30D8UVj9TzLHztRmCG1c4Vdq8fM5GRChiPIIU6EhE3oIuqJ+Aa/HE+e4OecI+nsMWkQaQ8/iYlopYBkJD//JCdVvenEmi/2PZQ=
 
