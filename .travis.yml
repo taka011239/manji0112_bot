@@ -12,4 +12,9 @@ deploy:
   app: damp-castle-2298
   on:
     repo: taka011239/manji0112_bot
-
+notifications:
+  hipchat:
+    rooms:
+      secure: DYcFbWnNPgoW6ug1YabuTYKgZCoY8F1x1EZZE24iJV0dpBk1fmhoFi0UbRAQogmBMgQOmfHilDTFx0liK9tJ87r5FoWE2IHVpaYJxVokmM+cVTU7SH5S1c6HEgj0QhtyjnitLdzmZInAQNyYas8hUmv9FcCfWj8xq2pD0dcXESM=
+      template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %(message)'
