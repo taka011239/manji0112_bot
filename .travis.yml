@@ -15,6 +15,6 @@ deploy:
 notifications:
   hipchat:
     rooms:
-      secure: DYcFbWnNPgoW6ug1YabuTYKgZCoY8F1x1EZZE24iJV0dpBk1fmhoFi0UbRAQogmBMgQOmfHilDTFx0liK9tJ87r5FoWE2IHVpaYJxVokmM+cVTU7SH5S1c6HEgj0QhtyjnitLdzmZInAQNyYas8hUmv9FcCfWj8xq2pD0dcXESM=
-      template:
-      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %(message)'
+      secure: a6tAf7AmvX7Hsr44OtFv90muXmTpFjrJLH/ZBLIyeIe//Op9amravr5kCShfCSvp3KDXbL3HfI+orRQgKZO9O1d41s8CqHvkfIg2RbEuAAx0FE15R59H/d/K0BD38aLp15DfJ9fMbM6a+ZAhDN03nKZPKpGW6nL31RXp4GnaT8Q=
+    template:
+    - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
